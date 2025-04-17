@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'
 import { motion } from 'framer-motion'
 import { AnimatedImage } from '@/components/ui/AnimatedImage'
 import { VillaSection } from '@/components/ui/VillaSection'
