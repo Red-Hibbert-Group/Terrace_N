@@ -4,15 +4,16 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import villa1 from '@/assets/images/VILLA 4-1.jpeg'
-import villa2 from '@/assets/images/VILLA 4-2.jpeg'
-import villa3 from '@/assets/images/VILLA 4-3.jpeg'
-import penthouse1 from '@/assets/images/penthouse1.jpeg'
-import penthouse2 from '@/assets/images/penthouse2.jpeg'
 
 export default function Home() {
   const [activeImage, setActiveImage] = useState(0)
-  const backgroundImages = [villa1, penthouse1, villa2, penthouse2, villa3]
+  const backgroundImages = [
+    '/assets/images/VILLA 4-1.jpeg',
+    '/assets/images/penthouse1.jpeg',
+    '/assets/images/VILLA 4-2.jpeg',
+    '/assets/images/penthouse2.jpeg',
+    '/assets/images/VILLA 4-3.jpeg'
+  ]
   
   useEffect(() => {
     const interval = setInterval(() => {
@@ -89,7 +90,7 @@ export default function Home() {
               <Link href="/villa4">
                 <div className="relative h-96 rounded-lg overflow-hidden bg-gray-900">
                   <Image 
-                    src={villa1}
+                    src="/assets/images/VILLA 4-1.jpeg"
                     alt="Villa4"
                     fill
                     className="object-cover transition-all duration-500 group-hover:scale-105"
@@ -112,7 +113,7 @@ export default function Home() {
               <Link href="/penthouse">
                 <div className="relative h-96 rounded-lg overflow-hidden bg-gray-900">
                   <Image 
-                    src={penthouse1}
+                    src="/assets/images/penthouse1.jpeg"
                     alt="Penthouse"
                     fill
                     className="object-cover transition-all duration-500 group-hover:scale-105"

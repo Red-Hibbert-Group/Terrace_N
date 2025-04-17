@@ -1,7 +1,7 @@
 {
   "version": 4,
   "routes": {
-    "/penthouse": {
+    "/contact": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -14,8 +14,32 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/penthouse",
-      "dataRoute": "/penthouse.rsc",
+      "srcRoute": "/contact",
+      "dataRoute": "/contact.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/villa4": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/villa4",
+      "dataRoute": "/villa4.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -49,7 +73,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/contact": {
+    "/penthouse": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -62,8 +86,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/contact",
-      "dataRoute": "/contact.rsc",
+      "srcRoute": "/penthouse",
+      "dataRoute": "/penthouse.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -101,37 +125,13 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
-    },
-    "/villa4": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/villa4",
-      "dataRoute": "/villa4.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
     }
   },
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "8e7462309ff919934f3cbe90f173b526",
-    "previewModeSigningKey": "9176d9acd5079b8a4110dbb8709781970c84838af748ae82a6eb5ad09c903944",
-    "previewModeEncryptionKey": "e61c33a4118df0446f7acc364a6d08437621c9caf1aa2826921e17a2733cebfc"
+    "previewModeId": "fe948b528a437d50bcb0262ae1c20fd3",
+    "previewModeSigningKey": "6f0fb313307f40cf989efad46a2cfb2946feab362cde1e6ebb83eaec5938fdd1",
+    "previewModeEncryptionKey": "f927a5d184358d1967202247ff7d04e21f5c45629cf56b0edd579e418e8750e4"
   }
 }

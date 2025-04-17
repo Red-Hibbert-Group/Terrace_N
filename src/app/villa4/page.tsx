@@ -4,17 +4,20 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { AnimatedImage } from '@/components/ui/AnimatedImage'
 import { VillaSection } from '@/components/ui/VillaSection'
-import villa1 from '@/assets/images/VILLA 4-1.jpeg'
-import villa2 from '@/assets/images/VILLA 4-2.jpeg'
-import villa3 from '@/assets/images/VILLA 4-3.jpeg'
-import villa15 from '@/assets/images/VILLA 4-15.jpeg'
-import villa16 from '@/assets/images/VILLA 4-16.jpeg'
-import villa8 from '@/assets/images/VILLA 4-8.jpeg'
-import villa9 from '@/assets/images/VILLA 4-9.jpeg'
-import villa20 from '@/assets/images/VILLA 4-20.jpeg'
-import villa21 from '@/assets/images/VILLA 4-21.jpeg'
 
 export default function Villa4Page() {
+  const villaImages = {
+    villa1: '/assets/images/VILLA 4-1.jpeg',
+    villa2: '/assets/images/VILLA 4-2.jpeg',
+    villa3: '/assets/images/VILLA 4-3.jpeg',
+    villa15: '/assets/images/VILLA 4-15.jpeg',
+    villa16: '/assets/images/VILLA 4-16.jpeg',
+    villa8: '/assets/images/VILLA 4-8.jpeg',
+    villa9: '/assets/images/VILLA 4-9.jpeg',
+    villa20: '/assets/images/VILLA 4-20.jpeg',
+    villa21: '/assets/images/VILLA 4-21.jpeg',
+  }
+
   return (
     <>
       {/* Hero Section */}
@@ -27,7 +30,7 @@ export default function Villa4Page() {
         >
           <div className="relative w-full h-full">
             <AnimatedImage
-              src={villa1}
+              src={villaImages.villa1}
               alt="Villa4 Exterior"
               className="h-full"
             />
@@ -61,12 +64,12 @@ export default function Villa4Page() {
       >
         <div className="grid grid-cols-2 gap-4">
           <AnimatedImage
-            src={villa2}
+            src={villaImages.villa2}
             alt="Villa4 Living Room"
             className="h-64"
           />
           <AnimatedImage
-            src={villa3}
+            src={villaImages.villa3}
             alt="Villa4 Living Area"
             className="h-64"
           />
@@ -81,12 +84,12 @@ export default function Villa4Page() {
       >
         <div className="grid grid-cols-2 gap-4">
           <AnimatedImage
-            src={villa15}
+            src={villaImages.villa15}
             alt="Villa4 Master Bedroom"
             className="h-64"
           />
           <AnimatedImage
-            src={villa16}
+            src={villaImages.villa16}
             alt="Villa4 Guest Bedroom"
             className="h-64"
           />
@@ -100,12 +103,12 @@ export default function Villa4Page() {
       >
         <div className="grid grid-cols-2 gap-4">
           <AnimatedImage
-            src={villa8}
+            src={villaImages.villa8}
             alt="Villa4 Kitchen"
             className="h-64"
           />
           <AnimatedImage
-            src={villa9}
+            src={villaImages.villa9}
             alt="Villa4 Dining Area"
             className="h-64"
           />
@@ -120,12 +123,12 @@ export default function Villa4Page() {
       >
         <div className="grid grid-cols-2 gap-4">
           <AnimatedImage
-            src={villa20}
+            src={villaImages.villa20}
             alt="Villa4 Outdoor Space"
             className="h-64"
           />
           <AnimatedImage
-            src={villa21}
+            src={villaImages.villa21}
             alt="Villa4 Pool Area"
             className="h-64"
           />

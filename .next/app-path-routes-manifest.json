@@ -1,8 +1,8 @@
 {
   "/_not-found/page": "/_not-found",
   "/favicon.ico/route": "/favicon.ico",
-  "/page": "/",
+  "/contact/page": "/contact",
   "/villa4/page": "/villa4",
   "/penthouse/page": "/penthouse",
-  "/contact/page": "/contact"
+  "/page": "/"
 }

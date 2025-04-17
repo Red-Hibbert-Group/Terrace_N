@@ -4,17 +4,20 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { AnimatedImage } from '@/components/ui/AnimatedImage'
 import { VillaSection } from '@/components/ui/VillaSection'
-import penthouse1 from '@/assets/images/penthouse1.jpeg'
-import penthouse2 from '@/assets/images/penthouse2.jpeg'
-import penthouse3 from '@/assets/images/penthouse3.jpeg'
-import penthouse4 from '@/assets/images/penthouse4.jpeg'
-import penthouse5 from '@/assets/images/penthouse5.jpeg'
-import penthouse8 from '@/assets/images/penthouse8.jpeg'
-import penthouse9 from '@/assets/images/penthouse9.jpeg'
-import penthouse14 from '@/assets/images/penthouse14.jpeg'
-import penthouse15 from '@/assets/images/penthouse15.jpeg'
 
 export default function PenthousePage() {
+  const penthouseImages = {
+    penthouse1: '/assets/images/penthouse1.jpeg',
+    penthouse2: '/assets/images/penthouse2.jpeg',
+    penthouse3: '/assets/images/penthouse3.jpeg',
+    penthouse4: '/assets/images/penthouse4.jpeg',
+    penthouse5: '/assets/images/penthouse5.jpeg',
+    penthouse8: '/assets/images/penthouse8.jpeg',
+    penthouse9: '/assets/images/penthouse9.jpeg',
+    penthouse14: '/assets/images/penthouse14.jpeg',
+    penthouse15: '/assets/images/penthouse15.jpeg',
+  }
+
   return (
     <>
       {/* Hero Section */}
@@ -27,7 +30,7 @@ export default function PenthousePage() {
         >
           <div className="relative w-full h-full">
             <AnimatedImage
-              src={penthouse1}
+              src={penthouseImages.penthouse1}
               alt="Penthouse Exterior"
               className="h-full"
             />
@@ -61,12 +64,12 @@ export default function PenthousePage() {
       >
         <div className="grid grid-cols-2 gap-4">
           <AnimatedImage
-            src={penthouse2}
+            src={penthouseImages.penthouse2}
             alt="Penthouse Living Room"
             className="h-64"
           />
           <AnimatedImage
-            src={penthouse3}
+            src={penthouseImages.penthouse3}
             alt="Penthouse Living Area"
             className="h-64"
           />
@@ -81,12 +84,12 @@ export default function PenthousePage() {
       >
         <div className="grid grid-cols-2 gap-4">
           <AnimatedImage
-            src={penthouse4}
+            src={penthouseImages.penthouse4}
             alt="Penthouse Master Bedroom"
             className="h-64"
           />
           <AnimatedImage
-            src={penthouse5}
+            src={penthouseImages.penthouse5}
             alt="Penthouse Master Bathroom"
             className="h-64"
           />
@@ -100,12 +103,12 @@ export default function PenthousePage() {
       >
         <div className="grid grid-cols-2 gap-4">
           <AnimatedImage
-            src={penthouse8}
+            src={penthouseImages.penthouse8}
             alt="Penthouse Entertainment Area"
             className="h-64"
           />
           <AnimatedImage
-            src={penthouse9}
+            src={penthouseImages.penthouse9}
             alt="Penthouse Lounge"
             className="h-64"
           />
@@ -120,12 +123,12 @@ export default function PenthousePage() {
       >
         <div className="grid grid-cols-2 gap-4">
           <AnimatedImage
-            src={penthouse14}
+            src={penthouseImages.penthouse14}
             alt="Penthouse Terrace"
             className="h-64"
           />
           <AnimatedImage
-            src={penthouse15}
+            src={penthouseImages.penthouse15}
             alt="Penthouse Outdoor Space"
             className="h-64"
           />
