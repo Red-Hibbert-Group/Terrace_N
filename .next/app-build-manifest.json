@@ -12,43 +12,42 @@
       "static/chunks/4bd1b696-ad45a0d75f1c7ab5.js",
       "static/chunks/684-d8ef2c6584bf6302.js",
       "static/chunks/main-app-dbd81ec5f85d7d52.js",
-      "static/css/c056769dd9e3bb60.css",
-      "static/chunks/874-23bb25126bb99fa5.js",
-      "static/chunks/app/layout-ff7ad46ec173845e.js"
+      "static/css/0236d4da023f2463.css",
+      "static/chunks/874-8179e1aff5ec9a87.js",
+      "static/chunks/app/layout-a41cd141b63a88a8.js"
     ],
     "/contact/page": [
       "static/chunks/webpack-decb145ea5426c4a.js",
       "static/chunks/4bd1b696-ad45a0d75f1c7ab5.js",
       "static/chunks/684-d8ef2c6584bf6302.js",
       "static/chunks/main-app-dbd81ec5f85d7d52.js",
-      "static/chunks/app/contact/page-49c8864098395d07.js"
-    ],
-    "/villa4/page": [
-      "static/chunks/webpack-decb145ea5426c4a.js",
-      "static/chunks/4bd1b696-ad45a0d75f1c7ab5.js",
-      "static/chunks/684-d8ef2c6584bf6302.js",
-      "static/chunks/main-app-dbd81ec5f85d7d52.js",
       "static/chunks/766-6008b95cc3872841.js",
-      "static/chunks/544-cad5c16f4c2b2353.js",
-      "static/chunks/app/villa4/page-8849d0aebc664071.js"
-    ],
-    "/penthouse/page": [
-      "static/chunks/webpack-decb145ea5426c4a.js",
-      "static/chunks/4bd1b696-ad45a0d75f1c7ab5.js",
-      "static/chunks/684-d8ef2c6584bf6302.js",
-      "static/chunks/main-app-dbd81ec5f85d7d52.js",
-      "static/chunks/766-6008b95cc3872841.js",
-      "static/chunks/544-cad5c16f4c2b2353.js",
-      "static/chunks/app/penthouse/page-81e523577a6a79fe.js"
+      "static/chunks/app/contact/page-06112d3127c87f56.js"
     ],
     "/page": [
       "static/chunks/webpack-decb145ea5426c4a.js",
       "static/chunks/4bd1b696-ad45a0d75f1c7ab5.js",
       "static/chunks/684-d8ef2c6584bf6302.js",
       "static/chunks/main-app-dbd81ec5f85d7d52.js",
+      "static/chunks/874-8179e1aff5ec9a87.js",
+      "static/chunks/app/page-ff4c9a269d40797a.js"
+    ],
+    "/penthouse/page": [
+      "static/chunks/webpack-decb145ea5426c4a.js",
+      "static/chunks/4bd1b696-ad45a0d75f1c7ab5.js",
+      "static/chunks/684-d8ef2c6584bf6302.js",
+      "static/chunks/main-app-dbd81ec5f85d7d52.js",
+      "static/chunks/544-cad5c16f4c2b2353.js",
+      "static/chunks/app/penthouse/page-521129a06ae27a2e.js"
+    ],
+    "/villa4/page": [
+      "static/chunks/webpack-decb145ea5426c4a.js",
+      "static/chunks/4bd1b696-ad45a0d75f1c7ab5.js",
+      "static/chunks/684-d8ef2c6584bf6302.js",
+      "static/chunks/main-app-dbd81ec5f85d7d52.js",
+      "static/chunks/544-cad5c16f4c2b2353.js",
       "static/chunks/766-6008b95cc3872841.js",
-      "static/chunks/874-23bb25126bb99fa5.js",
-      "static/chunks/app/page-37e2d3ba6361ec62.js"
+      "static/chunks/app/villa4/page-a894fc559b991215.js"
     ]
   }
 }

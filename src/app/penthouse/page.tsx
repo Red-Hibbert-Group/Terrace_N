@@ -2,8 +2,6 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { AnimatedImage } from '@/components/ui/AnimatedImage'
-import { VillaSection } from '@/components/ui/VillaSection'
 
 export default function PenthousePage() {
   const penthouseImages = {
@@ -29,11 +27,13 @@ export default function PenthousePage() {
           className="absolute inset-0"
         >
           <div className="relative w-full h-full">
-            <AnimatedImage
-              src={penthouseImages.penthouse1}
-              alt="Penthouse Exterior"
-              className="h-full"
-            />
+            <div className="absolute inset-0">
+              <img
+                src={penthouseImages.penthouse1}
+                alt="Penthouse Exterior"
+                className="h-full w-full object-cover"
+              />
+            </div>
             <div className="absolute inset-0 bg-black/30" />
           </div>
         </motion.div>
@@ -57,86 +57,127 @@ export default function PenthousePage() {
         </div>
       </section>
 
-      {/* Living Space */}
-      <VillaSection
-        title="Sophisticated Living"
-        description="Experience the epitome of luxury in our expansive living spaces with breathtaking views."
-      >
-        <div className="grid grid-cols-2 gap-4">
-          <AnimatedImage
-            src={penthouseImages.penthouse2}
-            alt="Penthouse Living Room"
-            className="h-64"
-          />
-          <AnimatedImage
-            src={penthouseImages.penthouse3}
-            alt="Penthouse Living Area"
-            className="h-64"
-          />
-        </div>
-      </VillaSection>
+      {/* Content Sections */}
+      <section className="py-12 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col space-y-16 md:space-y-20">
+            {/* Living Space */}
+            <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12">
+              <div className="w-full lg:w-1/2 space-y-4 md:space-y-6 mb-6 lg:mb-0">
+                <h2 className="text-3xl md:text-4xl font-bold gradient-text">Sophisticated Living</h2>
+                <p className="text-lg md:text-xl text-gray-600">
+                  Experience the epitome of luxury in our expansive living spaces with breathtaking views.
+                </p>
+              </div>
+              <div className="w-full lg:w-1/2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="aspect-square relative w-full h-64 sm:h-auto">
+                    <img 
+                      src={penthouseImages.penthouse2} 
+                      alt="Penthouse Living Room" 
+                      className="rounded-lg object-cover w-full h-full"
+                    />
+                  </div>
+                  <div className="aspect-square relative w-full h-64 sm:h-auto">
+                    <img 
+                      src={penthouseImages.penthouse3} 
+                      alt="Penthouse Living Area" 
+                      className="rounded-lg object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      {/* Master Suite */}
-      <VillaSection
-        title="Opulent Master Suite"
-        description="Unwind in our lavishly appointed master suite, where comfort meets sophistication."
-        reversed
-      >
-        <div className="grid grid-cols-2 gap-4">
-          <AnimatedImage
-            src={penthouseImages.penthouse4}
-            alt="Penthouse Master Bedroom"
-            className="h-64"
-          />
-          <AnimatedImage
-            src={penthouseImages.penthouse5}
-            alt="Penthouse Master Bathroom"
-            className="h-64"
-          />
-        </div>
-      </VillaSection>
+            {/* Master Suite */}
+            <div className="flex flex-col lg:flex-row-reverse items-center gap-8 md:gap-12">
+              <div className="w-full lg:w-1/2 space-y-4 md:space-y-6 mb-6 lg:mb-0">
+                <h2 className="text-3xl md:text-4xl font-bold gradient-text">Opulent Master Suite</h2>
+                <p className="text-lg md:text-xl text-gray-600">
+                  Unwind in our lavishly appointed master suite, where comfort meets sophistication.
+                </p>
+              </div>
+              <div className="w-full lg:w-1/2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="aspect-square relative w-full h-64 sm:h-auto">
+                    <img 
+                      src={penthouseImages.penthouse4} 
+                      alt="Penthouse Master Bedroom" 
+                      className="rounded-lg object-cover w-full h-full"
+                    />
+                  </div>
+                  <div className="aspect-square relative w-full h-64 sm:h-auto">
+                    <img 
+                      src={penthouseImages.penthouse5} 
+                      alt="Penthouse Master Bathroom" 
+                      className="rounded-lg object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      {/* Entertainment */}
-      <VillaSection
-        title="Entertainment & Leisure"
-        description="Indulge in our premium entertainment spaces designed for the perfect blend of relaxation and social gathering."
-      >
-        <div className="grid grid-cols-2 gap-4">
-          <AnimatedImage
-            src={penthouseImages.penthouse8}
-            alt="Penthouse Entertainment Area"
-            className="h-64"
-          />
-          <AnimatedImage
-            src={penthouseImages.penthouse9}
-            alt="Penthouse Lounge"
-            className="h-64"
-          />
-        </div>
-      </VillaSection>
+            {/* Entertainment */}
+            <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12">
+              <div className="w-full lg:w-1/2 space-y-4 md:space-y-6 mb-6 lg:mb-0">
+                <h2 className="text-3xl md:text-4xl font-bold gradient-text">Entertainment & Leisure</h2>
+                <p className="text-lg md:text-xl text-gray-600">
+                  Indulge in our premium entertainment spaces designed for the perfect blend of relaxation and social gathering.
+                </p>
+              </div>
+              <div className="w-full lg:w-1/2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="aspect-square relative w-full h-64 sm:h-auto">
+                    <img 
+                      src={penthouseImages.penthouse8} 
+                      alt="Penthouse Entertainment Area" 
+                      className="rounded-lg object-cover w-full h-full"
+                    />
+                  </div>
+                  <div className="aspect-square relative w-full h-64 sm:h-auto">
+                    <img 
+                      src={penthouseImages.penthouse9} 
+                      alt="Penthouse Lounge" 
+                      className="rounded-lg object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      {/* Terrace */}
-      <VillaSection
-        title="Private Terrace"
-        description="Experience panoramic views from your private terrace, perfect for both relaxation and entertaining."
-        reversed
-      >
-        <div className="grid grid-cols-2 gap-4">
-          <AnimatedImage
-            src={penthouseImages.penthouse14}
-            alt="Penthouse Terrace"
-            className="h-64"
-          />
-          <AnimatedImage
-            src={penthouseImages.penthouse15}
-            alt="Penthouse Outdoor Space"
-            className="h-64"
-          />
+            {/* Terrace */}
+            <div className="flex flex-col lg:flex-row-reverse items-center gap-8 md:gap-12">
+              <div className="w-full lg:w-1/2 space-y-4 md:space-y-6 mb-6 lg:mb-0">
+                <h2 className="text-3xl md:text-4xl font-bold gradient-text">Private Terrace</h2>
+                <p className="text-lg md:text-xl text-gray-600">
+                  Experience panoramic views from your private terrace, perfect for both relaxation and entertaining.
+                </p>
+              </div>
+              <div className="w-full lg:w-1/2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="aspect-square relative w-full h-64 sm:h-auto">
+                    <img 
+                      src={penthouseImages.penthouse14} 
+                      alt="Penthouse Terrace" 
+                      className="rounded-lg object-cover w-full h-full"
+                    />
+                  </div>
+                  <div className="aspect-square relative w-full h-64 sm:h-auto">
+                    <img 
+                      src={penthouseImages.penthouse15} 
+                      alt="Penthouse Outdoor Space" 
+                      className="rounded-lg object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </VillaSection>
+      </section>
 
       {/* Call to Action */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -145,13 +186,13 @@ export default function PenthousePage() {
             viewport={{ once: true }}
             className="max-w-3xl mx-auto"
           >
-            <h2 className="text-4xl font-bold gradient-text mb-6">Experience Penthouse Living</h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold gradient-text mb-4 md:mb-6">Experience Penthouse Living</h2>
+            <p className="text-lg md:text-xl text-gray-600 mb-6 md:mb-8">
               Ready to elevate your stay to new heights? Book our exclusive penthouse today.
             </p>
             <motion.a
               href="/contact"
-              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gold hover:bg-gold-light transition-colors"
+              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gold hover:bg-gold-light transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

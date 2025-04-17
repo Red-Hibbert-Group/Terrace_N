@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -35,8 +36,17 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center justify-center bg-gray-900">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70" />
+      <section className="relative min-h-[50vh] flex items-center justify-center">
+        <div className="absolute inset-0">
+          <Image 
+            src="/assets/images/VILLA 4-25.jpeg" 
+            alt="Luxury Villa Interior" 
+            className="w-full h-full object-cover"
+            fill
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70" />
+        </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white animate-fade-in-down">
             Contact Us
@@ -48,11 +58,11 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24">
+      <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16">
             {/* Contact Form */}
-            <div className="bg-white rounded-lg shadow-xl p-8 animate-fade-in-scale">
+            <div className="bg-white rounded-lg shadow-xl p-6 md:p-8 animate-fade-in-scale">
               <h2 className="text-3xl font-bold gradient-text mb-6">Send Us a Message</h2>
               
               {submitted ? (
@@ -134,47 +144,47 @@ export default function ContactPage() {
             </div>
             
             {/* Contact Information */}
-            <div className="animate-fade-in-scale animation-delay-200">
-              <h2 className="text-3xl font-bold gradient-text mb-6">Contact Information</h2>
+            <div className="bg-gradient-to-br from-gray-900 to-black rounded-lg shadow-xl p-6 md:p-8 animate-fade-in-scale animation-delay-200 text-white h-full flex flex-col">
+              <h2 className="text-3xl font-bold text-gold mb-6">Contact Information</h2>
               
-              <div className="space-y-8">
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 bg-gold p-3 rounded-md text-white">
+              <div className="space-y-8 flex-grow flex flex-col justify-center">
+                <div className="flex items-center">
+                  <div className="flex-shrink-0 bg-gold/90 p-3 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                   </div>
-                  <div className="ml-4">
-                    <h3 className="text-xl font-semibold text-gray-900">Phone</h3>
-                    <p className="mt-1 text-gray-600">9603796194</p>
-                    <p className="mt-1 text-gray-500">Available Monday - Friday, 9am - 6pm</p>
+                  <div className="ml-5">
+                    <h3 className="text-xl font-bold text-gold">Phone</h3>
+                    <p className="mt-1 text-lg text-white">9603796194</p>
+                    <p className="mt-0.5 text-gray-300">Available Monday - Friday, 9am - 6pm</p>
                   </div>
                 </div>
                 
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 bg-gold p-3 rounded-md text-white">
+                <div className="flex items-center">
+                  <div className="flex-shrink-0 bg-gold/90 p-3 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <div className="ml-4">
-                    <h3 className="text-xl font-semibold text-gray-900">Email</h3>
-                    <p className="mt-1 text-gray-600">thanushgaddam@gmail.com</p>
-                    <p className="mt-1 text-gray-500">We&apos;ll respond as soon as possible</p>
+                  <div className="ml-5">
+                    <h3 className="text-xl font-bold text-gold">Email</h3>
+                    <p className="mt-1 text-lg text-white">thanushgaddam@gmail.com</p>
+                    <p className="mt-0.5 text-gray-300">We&apos;ll respond as soon as possible</p>
                   </div>
                 </div>
                 
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 bg-gold p-3 rounded-md text-white">
+                <div className="flex items-center">
+                  <div className="flex-shrink-0 bg-gold/90 p-3 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </div>
-                  <div className="ml-4">
-                    <h3 className="text-xl font-semibold text-gray-900">Location</h3>
-                    <p className="mt-1 text-gray-600">Terraces Luxury Properties</p>
-                    <p className="mt-1 text-gray-500">Our properties are located in prime destinations</p>
+                  <div className="ml-5">
+                    <h3 className="text-xl font-bold text-gold">Location</h3>
+                    <p className="mt-1 text-lg text-white">Terraces Luxury Properties</p>
+                    <p className="mt-0.5 text-gray-300">Our properties are located in prime destinations</p>
                   </div>
                 </div>
               </div>

@@ -3,7 +3,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { AnimatedImage } from '@/components/ui/AnimatedImage'
-import { VillaSection } from '@/components/ui/VillaSection'
 
 export default function Villa4Page() {
   const villaImages = {
@@ -57,86 +56,127 @@ export default function Villa4Page() {
         </div>
       </section>
 
-      {/* Living Area */}
-      <VillaSection
-        title="Luxurious Living Space"
-        description="Immerse yourself in our meticulously designed living areas, where modern aesthetics meet unparalleled comfort."
-      >
-        <div className="grid grid-cols-2 gap-4">
-          <AnimatedImage
-            src={villaImages.villa2}
-            alt="Villa4 Living Room"
-            className="h-64"
-          />
-          <AnimatedImage
-            src={villaImages.villa3}
-            alt="Villa4 Living Area"
-            className="h-64"
-          />
-        </div>
-      </VillaSection>
+      {/* Content Sections */}
+      <section className="py-12 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col space-y-16 md:space-y-20">
+            {/* Living Area */}
+            <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12">
+              <div className="w-full lg:w-1/2 space-y-4 md:space-y-6 mb-6 lg:mb-0">
+                <h2 className="text-3xl md:text-4xl font-bold gradient-text">Luxurious Living Space</h2>
+                <p className="text-lg md:text-xl text-gray-600">
+                  Immerse yourself in our meticulously designed living areas, where modern aesthetics meet unparalleled comfort.
+                </p>
+              </div>
+              <div className="w-full lg:w-1/2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="aspect-square relative w-full h-64 sm:h-auto">
+                    <img 
+                      src={villaImages.villa2} 
+                      alt="Villa4 Living Room" 
+                      className="rounded-lg object-cover w-full h-full"
+                    />
+                  </div>
+                  <div className="aspect-square relative w-full h-64 sm:h-auto">
+                    <img 
+                      src={villaImages.villa3} 
+                      alt="Villa4 Living Area" 
+                      className="rounded-lg object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      {/* Bedrooms */}
-      <VillaSection
-        title="Elegant Bedrooms"
-        description="Rest in absolute comfort in our beautifully appointed bedrooms."
-        reversed
-      >
-        <div className="grid grid-cols-2 gap-4">
-          <AnimatedImage
-            src={villaImages.villa15}
-            alt="Villa4 Master Bedroom"
-            className="h-64"
-          />
-          <AnimatedImage
-            src={villaImages.villa16}
-            alt="Villa4 Guest Bedroom"
-            className="h-64"
-          />
-        </div>
-      </VillaSection>
+            {/* Bedrooms */}
+            <div className="flex flex-col lg:flex-row-reverse items-center gap-8 md:gap-12">
+              <div className="w-full lg:w-1/2 space-y-4 md:space-y-6 mb-6 lg:mb-0">
+                <h2 className="text-3xl md:text-4xl font-bold gradient-text">Elegant Bedrooms</h2>
+                <p className="text-lg md:text-xl text-gray-600">
+                  Rest in absolute comfort in our beautifully appointed bedrooms.
+                </p>
+              </div>
+              <div className="w-full lg:w-1/2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="aspect-square relative w-full h-64 sm:h-auto">
+                    <img 
+                      src={villaImages.villa15} 
+                      alt="Villa4 Master Bedroom" 
+                      className="rounded-lg object-cover w-full h-full"
+                    />
+                  </div>
+                  <div className="aspect-square relative w-full h-64 sm:h-auto">
+                    <img 
+                      src={villaImages.villa16} 
+                      alt="Villa4 Guest Bedroom" 
+                      className="rounded-lg object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      {/* Kitchen & Dining */}
-      <VillaSection
-        title="Gourmet Kitchen & Dining"
-        description="A chef's paradise equipped with top-of-the-line appliances and elegant dining spaces."
-      >
-        <div className="grid grid-cols-2 gap-4">
-          <AnimatedImage
-            src={villaImages.villa8}
-            alt="Villa4 Kitchen"
-            className="h-64"
-          />
-          <AnimatedImage
-            src={villaImages.villa9}
-            alt="Villa4 Dining Area"
-            className="h-64"
-          />
-        </div>
-      </VillaSection>
+            {/* Kitchen & Dining */}
+            <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12">
+              <div className="w-full lg:w-1/2 space-y-4 md:space-y-6 mb-6 lg:mb-0">
+                <h2 className="text-3xl md:text-4xl font-bold gradient-text">Gourmet Kitchen & Dining</h2>
+                <p className="text-lg md:text-xl text-gray-600">
+                  A chef&apos;s paradise equipped with top-of-the-line appliances and elegant dining spaces.
+                </p>
+              </div>
+              <div className="w-full lg:w-1/2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="aspect-square relative w-full h-64 sm:h-auto">
+                    <img 
+                      src={villaImages.villa8} 
+                      alt="Villa4 Kitchen" 
+                      className="rounded-lg object-cover w-full h-full"
+                    />
+                  </div>
+                  <div className="aspect-square relative w-full h-64 sm:h-auto">
+                    <img 
+                      src={villaImages.villa9} 
+                      alt="Villa4 Dining Area" 
+                      className="rounded-lg object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      {/* Outdoor Space */}
-      <VillaSection
-        title="Stunning Outdoor Areas"
-        description="Enjoy the perfect blend of indoor and outdoor living with our beautifully landscaped spaces."
-        reversed
-      >
-        <div className="grid grid-cols-2 gap-4">
-          <AnimatedImage
-            src={villaImages.villa20}
-            alt="Villa4 Outdoor Space"
-            className="h-64"
-          />
-          <AnimatedImage
-            src={villaImages.villa21}
-            alt="Villa4 Pool Area"
-            className="h-64"
-          />
+            {/* Outdoor Space */}
+            <div className="flex flex-col lg:flex-row-reverse items-center gap-8 md:gap-12">
+              <div className="w-full lg:w-1/2 space-y-4 md:space-y-6 mb-6 lg:mb-0">
+                <h2 className="text-3xl md:text-4xl font-bold gradient-text">Stunning Outdoor Areas</h2>
+                <p className="text-lg md:text-xl text-gray-600">
+                  Enjoy the perfect blend of indoor and outdoor living with our beautifully landscaped spaces.
+                </p>
+              </div>
+              <div className="w-full lg:w-1/2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="aspect-square relative w-full h-64 sm:h-auto">
+                    <img 
+                      src={villaImages.villa20} 
+                      alt="Villa4 Outdoor Space" 
+                      className="rounded-lg object-cover w-full h-full"
+                    />
+                  </div>
+                  <div className="aspect-square relative w-full h-64 sm:h-auto">
+                    <img 
+                      src={villaImages.villa21} 
+                      alt="Villa4 Pool Area" 
+                      className="rounded-lg object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </VillaSection>
+      </section>
 
       {/* Call to Action */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -145,13 +185,13 @@ export default function Villa4Page() {
             viewport={{ once: true }}
             className="max-w-3xl mx-auto"
           >
-            <h2 className="text-4xl font-bold gradient-text mb-6">Experience Villa4</h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold gradient-text mb-4 md:mb-6">Experience Villa4</h2>
+            <p className="text-lg md:text-xl text-gray-600 mb-6 md:mb-8">
               Ready to experience luxury living at its finest? Book your stay at Villa4 today.
             </p>
             <motion.a
               href="/contact"
-              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gold hover:bg-gold-light transition-colors"
+              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gold hover:bg-gold-light transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

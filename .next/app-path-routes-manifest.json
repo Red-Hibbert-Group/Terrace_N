@@ -2,7 +2,7 @@
   "/_not-found/page": "/_not-found",
   "/favicon.ico/route": "/favicon.ico",
   "/contact/page": "/contact",
-  "/villa4/page": "/villa4",
+  "/page": "/",
   "/penthouse/page": "/penthouse",
-  "/page": "/"
+  "/villa4/page": "/villa4"
 }
