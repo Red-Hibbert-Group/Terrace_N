@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -36,17 +37,24 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center justify-center">
-        <div className="absolute inset-0">
-          <Image 
-            src="/assets/images/VILLA 4-25.jpeg" 
-            alt="Luxury Villa Interior" 
-            className="w-full h-full object-cover"
-            fill
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70" />
-        </div>
+      <section className="relative min-h-[60vh] sm:min-h-[80vh] flex items-center justify-center overflow-hidden">
+        <motion.div 
+          initial={{ scale: 1.1 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 1.5 }}
+          className="absolute inset-0"
+        >
+          <div className="relative w-full h-full">
+            <div className="absolute inset-0">
+              <img
+                src="/assets/images/VILLA 4-45.jpeg"
+                alt="Contact Us"
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div className="absolute inset-0 bg-black/30" />
+          </div>
+        </motion.div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white animate-fade-in-down">
             Contact Us

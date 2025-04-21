@@ -63,7 +63,7 @@ export default function Home() {
               href="/contact"
               className="inline-flex items-center px-6 sm:px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gold hover:bg-gold-light transition-colors"
             >
-              Book Your Stay
+              Contact Us
             </Link>
           </div>
         </div>

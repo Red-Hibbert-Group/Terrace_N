@@ -41,7 +41,7 @@ export function Navigation() {
                 href="/contact"
                 className="inline-flex items-center px-5 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gold hover:bg-gold-light transition-colors"
               >
-                Book Now
+                Contact Us
               </Link>
             </div>
           </div>
@@ -90,7 +90,7 @@ export function Navigation() {
                 className="block px-3 py-2 text-base font-medium text-gray-900 bg-gray-100 hover:bg-gray-200 hover:text-gold rounded-md"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Book Now
+                Contact Us
               </Link>
             </div>
           </div>
