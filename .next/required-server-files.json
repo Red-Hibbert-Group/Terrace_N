@@ -95,7 +95,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/rhg/Documents/GitHub/Terrace_N",
+    "outputFileTracingRoot": "/Users/rhg003/Documents/GitHub/Terrace_N",
     "experimental": {
       "nodeMiddleware": false,
       "cacheLife": {
@@ -278,10 +278,10 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.js",
     "turbopack": {
-      "root": "/Users/rhg/Documents/GitHub/Terrace_N"
+      "root": "/Users/rhg003/Documents/GitHub/Terrace_N"
     }
   },
-  "appDir": "/Users/rhg/Documents/GitHub/Terrace_N",
+  "appDir": "/Users/rhg003/Documents/GitHub/Terrace_N",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",

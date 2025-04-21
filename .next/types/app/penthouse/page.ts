@@ -1,4 +1,4 @@
-// File: /Users/rhg/Documents/GitHub/Terrace_N/src/app/penthouse/page.tsx
+// File: /Users/rhg003/Documents/GitHub/Terrace_N/src/app/penthouse/page.tsx
 import * as entry from '../../../../src/app/penthouse/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
