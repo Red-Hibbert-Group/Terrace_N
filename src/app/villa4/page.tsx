@@ -49,7 +49,7 @@ export default function Villa4Page() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[100vh] sm:min-h-[80vh] flex items-center justify-center overflow-hidden">
         <motion.div 
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
@@ -60,9 +60,9 @@ export default function Villa4Page() {
             <AnimatedImage
               src={villaImages.villa1}
               alt="Villa4 Exterior"
-              className="h-full"
+              className="h-full w-full object-cover object-center"
             />
-            <div className="absolute inset-0 bg-black/30" />
+            <div className="absolute inset-0 bg-black/40" />
           </div>
         </motion.div>
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
@@ -436,21 +436,37 @@ export default function Villa4Page() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
             {/* Map */}
             <motion.div
-              className="relative aspect-square lg:aspect-auto rounded-xl overflow-hidden shadow-lg"
+              className="w-full h-auto bg-white rounded-xl shadow-lg overflow-hidden flex flex-col"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3843.3095377073456!2d73.82338591538367!3d15.556499889182439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfea14cad1f1d5%3A0x3d7f71bc0f247599!2sBetim-Verem-Saligao%20Rd%2C%20Marra%2C%20Pilern%2C%20Goa%20403114!5e0!3m2!1sen!2sin!4v1710431567890!5m2!1sen!2sin"
-                width="100%"
-                height="100%"
-                style={{ border: 0, minHeight: '400px' }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+              <div className="h-[300px] sm:h-[350px] md:h-[400px]">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3843.3095377073456!2d73.82338591538367!3d15.556499889182439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfea14cad1f1d5%3A0x3d7f71bc0f247599!2sBetim-Verem-Saligao%20Rd%2C%20Marra%2C%20Pilern%2C%20Goa%20403114!5e0!3m2!1sen!2sin!4v1710431567890!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="rounded-t-xl"
+                ></iframe>
+              </div>
+              <div className="py-3 px-4 bg-white">
+                <a 
+                  href="https://maps.app.goo.gl/mucKphyySU1Q7yyG9" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 font-medium flex items-center justify-center"
+                >
+                  <span>View larger map</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
             </motion.div>
 
             {/* Neighborhood Highlights */}
@@ -471,7 +487,7 @@ export default function Villa4Page() {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900">Airport Access</h4>
-                    <p className="text-gray-600">10 minutes to International Airport</p>
+                    <p className="text-gray-600">30 minutes to International Airport</p>
                   </div>
                 </div>
 
@@ -496,7 +512,7 @@ export default function Villa4Page() {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900">Beaches</h4>
-                    <p className="text-gray-600">5 min to Calangute Beach</p>
+                    <p className="text-gray-600">10 minutes to Calangute Beach</p>
                   </div>
                 </div>
 
