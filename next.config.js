@@ -8,7 +8,8 @@ const nextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     remotePatterns: [],
   },
-  webpack(config) {
+  // Configure webpack only when not using Turbopack
+  webpack: (config, { dev, isServer, webpack, nextRuntime }) => {
     // Configure file loaders
     config.module.rules.push({
       test: /\.(jpe?g|png|svg|gif)$/i,
@@ -16,6 +17,13 @@ const nextConfig = {
     });
     
     return config;
+  },
+  // Add Turbopack configuration (using the stable API)
+  turbopack: {
+    // Turbopack configuration options
+    rules: {
+      // Configure Turbopack rules here if needed
+    },
   },
 };
 

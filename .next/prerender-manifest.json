@@ -1,6 +1,30 @@
 {
   "version": 4,
   "routes": {
+    "/penthouse": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/penthouse",
+      "dataRoute": "/penthouse.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/favicon.ico": {
       "initialHeaders": {
         "cache-control": "public, max-age=0, must-revalidate",
@@ -21,30 +45,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/favicon.ico",
       "dataRoute": null,
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/villa4": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/villa4",
-      "dataRoute": "/villa4.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -102,7 +102,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/penthouse": {
+    "/villa4": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -115,8 +115,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/penthouse",
-      "dataRoute": "/penthouse.rsc",
+      "srcRoute": "/villa4",
+      "dataRoute": "/villa4.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -130,8 +130,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "e16c6683d3ab7c58e8ad4ba61d88f21c",
-    "previewModeSigningKey": "73b45d2bf7ba7c5a17c9281ff7418264379117fba46e72cc039d54ee34f9a32e",
-    "previewModeEncryptionKey": "d1315b1110dfc8d10eafd6bb861487f9f51c543c86b7b61b743c96a26b9105fb"
+    "previewModeId": "724d1ee8990f669e4d350c493e0600d6",
+    "previewModeSigningKey": "34c9f34832e1364f42ead2f391bf6b2fef1706a3ad6ceb05a124f42d95be68f9",
+    "previewModeEncryptionKey": "2e6c26e5e2ef339c5818af4e006089311707c03bc3898450a705a41d337c9417"
   }
 }

@@ -278,6 +278,7 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.js",
     "turbopack": {
+      "rules": {},
       "root": "/Users/rhg003/Documents/GitHub/Terrace_N"
     }
   },
